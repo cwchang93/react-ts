@@ -1,5 +1,5 @@
 import * as React from "react";
-import InputRef from "../components/03-ref/InputRef.tsx";
+import InputRef from "../components/03-ref/InputRef";
 import AddRef from "../components/03-ref/AddRef";
 
 export default {
@@ -17,8 +17,9 @@ export const story = () => {
   return (
     <>
       <InputRef />
+
       <AddRef addNum={3} ref={addRef} />
-      <button>anotherBtn</button>
+      <button onClick={() => {}}>anotherBtn</button>
     </>
   );
 };
