@@ -1,10 +1,11 @@
-// Union Type 聯合類型
-
+// TS02
+// Union Type 聯合類型 |
 let muchType: string | number = "hiabc";
-// muchType = 10;
 
-console.log(muchType.substring(2));   // 若要調用類型方法則必須符合每個類型的方法
-
+// 若要調用類型方法則必須符合該類型的方法
+muchType.split("")
+muchType = 100;
+muchType.split("")
 
 // 定義接口
 // interface Istate {
