@@ -23,7 +23,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "declaration": true,
@@ -38,7 +38,7 @@
     "noEmit": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*", "tsSyntax", "tsSyntax"
   ],
   "exclude": [
     "node_modules",

@@ -25,7 +25,7 @@ class Parent extends React.Component<any, I_Parent_State> {
     render() {
         return (
             <div>
-                <button onClick={this.handleCilck}>父组件更新state</button>
+                <button onClick={this.handleCilck}>父组件更新state: Add emoji</button>
                 <Child list={this.state.list} />;
         </div>
         )

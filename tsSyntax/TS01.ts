@@ -1,5 +1,5 @@
 /* eslint-disable */
-// TS 01-1 Primitive Type
+// TS 01-1 原始型別 Primitive Type
 let str: string = "xinMedia";
 const num: number = 1
 const flag: boolean = true;
@@ -7,7 +7,8 @@ const un: undefined = undefined;
 const emp: null = null;
 
 
-// TS 01-2 string/number/boolean 可為undefined & null 的超集  (需調整strictNullCheck: false)
+// TS 01-2 string/number/boolean 可為undefined & null 的子集  
+// (需調整tsConfig.json中的strictNullCheck: false)
 str = null;
 str = undefined;
 
@@ -16,6 +17,7 @@ str = undefined;
 let a;  // 若未定義 => any 任意型別
 a = 'string';
 a = 123;
+
 
 let word = 'word'; // TS會自動辨別類型為string
 // word = 123
@@ -95,12 +97,12 @@ const os = {
 
 
 
-// console.log(num, flag, un, emp);
-// console.log(a);
-// console.log(str);
-// console.log(word);
-// console.log(person);
-// console.log(animalOne);
-// console.log(arr, arr1, arr2);
-// console.log(tp)
+console.log(num, flag, un, emp);
+console.log(a);
+console.log(str);
+console.log(word);
+console.log(person);
+console.log(animalOne);
+console.log(arr, arr1, arr2);
+console.log(tp)
 export { }
