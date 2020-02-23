@@ -15,7 +15,7 @@ class Group extends React.Component<I_Props> {
           return (
             <div style={{ display: "flex" }}>
               <li>{this.props.name}</li>
-              <button onClick={() => consumerProps.add()}>+</button>
+              <button onClick={() => (consumerProps as any).add()}>+</button>
             </div>
           );
         }}

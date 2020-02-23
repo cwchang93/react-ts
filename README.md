@@ -1,44 +1,101 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React 入門 & 用TS開發React
 
-## Available Scripts
+本教學主要著重在使用TS開發React的基本概念，同時有實作練習。
 
-In the project directory, you can run:
+## 課程大綱
 
-### `yarn start`
+1. 基本設定回顧
+2. 設定 CSS Module 解決團隊 CSS 命名問題
+3. CSS 主題設定 Solution
+4. CSS 按照裝置取出與禁止轉譯載入優化
+5. 多設定與拆分合拼設定
+6. 定義環境變數
+7. 打包代碼最佳化並分析打包結果
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 準備作業
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. 安裝 [node js](https://nodejs.org/dist/v12.14.1/node-v12.14.1-x64.msi)
+2. Clone 範例 git 庫 https://devops.liontravel.com/LionF2E/Modules-Development/_git/TrainingSample
+3. 使用終端機路徑進到所 Clone 的本地專案資料夾中的 Root\F2E_Education\01_webpack 進階設定實例\_20200214
+4. 使用的工具：
+   1. 文字編輯器 VS Code、VS、Sublime…
+   2. 命令列
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 三大框架比較
 
-### `yarn build`
+- 使用率
+- 差別
+- 特色
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### ES6 前情提要
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### 生命週期
+<img src="./img/reactLifeCycle.PNG">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### 分三階段
 
-### `yarn eject`
+Mounting => Updating => Unmounting
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Mounting 掛載順序
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Constructor
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+用途
+1. 初始化state
+2. 綁定handler
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- constructor 裡面不要
 
-## Learn More
+```
+1. setState: this.state可以直接賦值為何要setState
+2. 將props寫在state中
+3. fetch(): 跟
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+userData
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+ constructor(props) {
+        super(props);
+        this.state = {
+            dataLoaded: false,
+        };
+        this.userData = null; // 使用者資料
+        this.printMe() = this.printMe().bind(this);
+    }
+
+```
+
+```js
+state = {
+  dataLoaded: false
+};
+```
+
+- static getDerivedStateFromProps()
+
+* render()
+
+* componentDidMount()
+
+Q: 問題討論
+
+1. 其實也可以在 constructor 中 fetchData()? => DON't do that
+2. 箭頭函式已經在外層加了，function 就不需要加了?
+
+#### Updating 更新
+
+#### useEffect
+
+https://overreacted.io/zh-hant/a-complete-guide-to-useeffect/
+
+用法
+
+- 第二個參數放空陣列可以實現 componentDidMount
+- 第二個陣列參數中放值代表當該值改變後會再次觸發 useEffect，相當於 componentDidUpdate
+- return statement 代表 unmount 前會做的事，相當於 componentWillUnmount
+- useEffect 可以有不只一個
+- 一個函式實現原本三個獨立函式的功能，展現了 hooks 簡潔與強大。
