@@ -2,21 +2,25 @@ import * as React from 'react';
 import Child from './Child'
 
 interface I_Parent_State {
-    list: { name: string }[]
+    list?: Array<any>
 }
 
 class Parent extends React.Component<any, I_Parent_State> {
 
     state = {
-        list: [{ name: 'jw' }, { name: 'cy' }]
+        list: ['JK', 'FM']
     }
 
     handleCilck = () => {
 
+        const newArr = [...this.state.list]
+        newArr.push('👍')
         this.setState({
-            list: this.state.list.concat([{ name: 'parent' }])
-        }, () => console.log('父組件setState: 加Parent', this.state))
+            list: newArr
+        }, () => console.log('父組件setState=> list: After👍', this.state.list))
     }
+
+
 
     render() {
         return (
