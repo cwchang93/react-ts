@@ -38,7 +38,7 @@
     "noEmit": true
   },
   "include": [
-    "src/**/*", "tsSyntax", "tsSyntax"
+    "src/**/*", "tsSyntax", "tsSyntax", "backUp/hello.tsx"
   ],
   "exclude": [
     "node_modules",

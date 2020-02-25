@@ -6,6 +6,13 @@ interface I_Props {
   add?: any;
 }
 
+// interface I_cntx {
+//   add?: () => void;
+//   state: {
+//       total: number;
+//   };
+// }
+
 class Group extends React.Component<I_Props> {
   render() {
     return (

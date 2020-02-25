@@ -9,8 +9,8 @@ const emp: null = null;
 
 // TS 01-2 string/number/boolean 可為undefined & null 的子集  
 // (需調整tsConfig.json中的strictNullCheck: false)
-str = null;
-str = undefined;
+// str = null;
+// str = undefined;
 
 
 // TS 01-3 類型推論 
