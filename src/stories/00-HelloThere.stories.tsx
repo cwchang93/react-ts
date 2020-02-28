@@ -1,10 +1,10 @@
 import React from "react";
-import HelloClass from "../components/00-hello/HelloClass";
-import HelloFunction from "../components/00-hello/HelloFunction"
-import HelloPure from "../components/00-hello/HelloPure"
+import HelloClass from "../components/00-HelloThere/HelloClass";
+import HelloFunction from "../components/00-HelloThere/HelloFunction"
+import HelloPure from "../components/00-HelloThere/HelloPure"
 
 export default {
-  title: "00-HelloTest",
+  title: "00-HelloThere",
   parameters: {
     info: { inline: true }
   }

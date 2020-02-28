@@ -1,9 +1,11 @@
 import * as React from 'react';
 
-class HelloClass extends React.Component<any, any> {
+class HelloPure extends React.PureComponent<any, any> {
+
     state = {
         age: 18
     }
+
     render() {
         return (
             <div style={{ border: 'solid black 1px', padding: '5px' }}>
@@ -24,4 +26,4 @@ class HelloClass extends React.Component<any, any> {
     }
 }
 
-export default HelloClass;
+export default HelloPure;
