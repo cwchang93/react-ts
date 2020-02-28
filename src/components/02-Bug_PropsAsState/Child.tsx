@@ -3,7 +3,6 @@ import * as React from 'react';
 interface I_Child_Props {
     list: string[]
 }
-
 interface I_Child_State {
     list: string[]
 }
@@ -29,7 +28,7 @@ class Child extends React.Component<I_Child_Props, I_Child_State> {
     render() {
         console.log('我是子组件的render');
         // const newList = this.props.list | 
-        console.log('propsList', this.props.list);
+        // console.log('propsList', this.props.list);
 
         return (
             <div>

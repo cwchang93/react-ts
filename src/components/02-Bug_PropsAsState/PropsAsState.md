@@ -10,3 +10,5 @@ componentDidUpdate(prevProps: I_Child_Props) {
     }
 
 ```
+
+### Sol02
