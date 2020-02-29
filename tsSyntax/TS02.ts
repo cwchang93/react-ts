@@ -44,11 +44,13 @@ let randomArr: boolean[] = [true, false]
 // TS 02-3 Tuple
 let tp: [string, number];
 tp = ["hello", 10];
-tp = [10, "hello"]; // 順序不同會報錯 
+// tp = [10, "hello"]; // 順序不同會報錯 
 
 
 
 // TS 02-4 要允許多種型別的array要如何表示?
+
+
 
 
 // TS 02-5 函數類型
@@ -61,16 +63,18 @@ funcType('Jinwei', 18);
 
 // TS 02-6 函數參數不確定該怎麼辦? 
 
+function getValue(value: string): string;
+function getValue(value: number): number;
+
 function getValue(value: string | number): string | number {
     return value
 }
 let vFunc: number = getValue(1);
 
 
-
 // TS 02-7 斷言類型
 const getAssert = (value: string | number): number => {
-    return value.length
+    return (<string>value).length
 }
 
 
@@ -101,7 +105,6 @@ getGender("男")
 
 
 console.log(tp, person, arr1, arr, arr2, animalOne, randomArr)
-
 console.log(getAssert);
 console.log(obj1, obj2, obj3);
 console.log(vFunc);

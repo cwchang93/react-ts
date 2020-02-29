@@ -30,26 +30,8 @@ muchType = 100;
 
 
 
-
-
-// const os = {
-//     apple: 'macOS',
-//     microsoft: 'windows'
-// }
-
-
-
-// Q: 今天如果有個api 傳進來的data內容是不可控的? 那要如何定義型別?
-// 泛型、 keyOf Partial 去繼承 
-
-
-
 console.log(num, flag, un, emp);
 console.log(a);
 console.log(str);
 console.log(word);
-console.log(person);
-console.log(animalOne);
-console.log(arr, arr1, arr2);
-console.log(tp)
 export { }

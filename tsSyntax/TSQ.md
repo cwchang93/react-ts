@@ -15,7 +15,6 @@ let spreadArr:  [...(string|number)[]] = ['hey', 213]
 // 聯合類型的函數，可採用重載方式
 function getValue(value: number): number;
 function getValue(value: string): string;
-
 ```
 
 #### TS 02-7  斷言類型
@@ -44,6 +43,11 @@ const nameList: I_nameList = [
     }
   }
 ];
+
+3.今天如果有個api 傳進來的data內容是不可控的? 那要如何定義型別?
+// 泛型、 keyOf Partial 去繼承 
+
+
 ```
 
 ### TS01.ts中提到: interface若屬性個數不確定除了用以下方式，還能用那些方式?   
