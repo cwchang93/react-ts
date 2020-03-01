@@ -7,4 +7,14 @@ interface I_cntx {
     };
 }
 
-export const { Provider, Consumer } = React.createContext<I_cntx | null>(null);
+const defaultContext = {
+    add: () => {
+        return;
+    },
+
+    state: {
+        total: 0,
+    }
+}
+
+export const { Provider, Consumer } = React.createContext<I_cntx>(defaultContext);

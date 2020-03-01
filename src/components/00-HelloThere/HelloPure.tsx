@@ -7,6 +7,7 @@ class HelloPure extends React.PureComponent<any, any> {
     }
 
     render() {
+        console.log('render');
         return (
             <div style={{ border: 'solid black 1px', padding: '5px' }}>
                 <div>

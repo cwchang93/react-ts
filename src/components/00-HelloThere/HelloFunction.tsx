@@ -4,6 +4,7 @@ import * as React from 'react';
 const HelloFunction = (props: any) => {
 
     const [age, setAge] = React.useState<any>(18)
+    console.log('renderFunction');
 
     return (
         <div style={{ border: 'solid black 1px', padding: '5px' }}>

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 class LifeCycle extends React.Component {
 
-    constructor(props: any) {
+    constructor(props: {}) {
         super(props);
         console.log('constructor');
     }
@@ -11,7 +11,11 @@ class LifeCycle extends React.Component {
     render() {
 
         return (
-            <div style={{ border: "solid red 1px" }}>LifeCycleChild</div>
+            <>
+                <div style={{ border: "solid red 1px" }}>LifeCycleChild</div>
+
+                <img src="../../../public/reactLifeCycle.png" />
+            </>
         )
     }
 

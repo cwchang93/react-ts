@@ -1,4 +1,4 @@
-### 掛載
+### 掛載 Mounting
 
 ```js
   componentWillMount() {
@@ -11,7 +11,7 @@
 
 ```
 
-### 更新
+### 更新 Updating
 ```js
   componentWillReceiveProps() {
     console.log('組件將要接受參數: componentWillReceiveProps');

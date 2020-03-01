@@ -2,11 +2,10 @@ import * as React from 'react';
 import InputChild from './InputChild'
 import { checkEmpty, checkNumber, checkEmail } from './validate';
 
-interface I_Nested_Props { }
-
 interface I_Nested_State {
+    init: boolean,
     result: {
-        // status?: boolean;
+        status?: boolean;
         ErrMsg: {
             nameErr: string,
             phoneErr: string,
@@ -15,12 +14,13 @@ interface I_Nested_State {
     }
 }
 
-class NestedParent extends React.Component<I_Nested_Props, I_Nested_State> {
 
+class NestedParent extends React.Component<{}, I_Nested_State> {
 
     state = {
+        init: true,
         result: {
-            // status: false,
+            status: false,
             ErrMsg: {
                 nameErr: '',
                 phoneErr: '',
@@ -35,34 +35,27 @@ class NestedParent extends React.Component<I_Nested_Props, I_Nested_State> {
         const result = {
             ErrMsg: {
                 nameErr: nameErrMsg,
-                phoneErr: this.state.result.ErrMsg.phoneErr,
-                emailErr: this.state.result.ErrMsg.emailErr,
             }
         }
-
         this.setState({ result: result })
     }
     handlePhoneNum = (inputPhoneNum: string) => {
         const phoneErrMsg = checkNumber(inputPhoneNum);
         const result = {
             ErrMsg: {
-                nameErr: this.state.result.ErrMsg.nameErr,
                 phoneErr: phoneErrMsg,
-                emailErr: this.state.result.ErrMsg.emailErr,
             }
         }
-        this.setState({ result })
+        this.setState({ result: result })
     }
     handleEmail = (inputEmail: string) => {
         const emailErrMsg = checkEmail(inputEmail);
         const result = {
             ErrMsg: {
-                nameErr: this.state.result.ErrMsg.nameErr,
-                phoneErr: this.state.result.ErrMsg.phoneErr,
                 emailErr: emailErrMsg,
             }
         }
-        this.setState({ result })
+        this.setState({ result: result })
     }
 
 

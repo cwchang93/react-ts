@@ -15,9 +15,6 @@ class InputChild extends React.Component<I_InputChild_Props, I_InputChild_State>
 
 
     render() {
-        // console.log('我是子组件的render');
-        // const newList = this.props.list | 
-        // console.log('propsList', this.props.list);
         const { label, placeholder, errMsg } = this.props
 
 

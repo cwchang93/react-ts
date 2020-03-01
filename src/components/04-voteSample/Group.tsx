@@ -3,7 +3,7 @@ import { Consumer } from "../../context/context";
 
 interface I_Props {
   name: string;
-  add?: any;
+  add: () => void;
 }
 
 // interface I_cntx {
@@ -18,10 +18,9 @@ class Group extends React.Component<I_Props> {
     return (
       <Consumer>
         {consumerProps => {
-          console.log("consumerProps", consumerProps);
           return (
-            <div style={{ display: "flex" }}>
-              <li>{this.props.name}</li>
+            <div style={{ display: "flex", margin: "5px 0" }}>
+              <li style={{ marginRight: "5px" }}>{this.props.name}</li>
               <button onClick={() => (consumerProps as any).add()}>+</button>
             </div>
           );

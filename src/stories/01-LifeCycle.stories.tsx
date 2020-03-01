@@ -1,5 +1,5 @@
 import * as React from "react";
-import LifeCycleChild from "../components/01-LifeCycle/LifeCycleChild";
+import LifeCycle from "../components/01-LifeCycle/LifeCycleChild";
 
 export default {
     title: "01-LifeCycle",
@@ -8,11 +8,11 @@ export default {
     }
 };
 
-export const LifeCycle = () => {
+export const LifeCycleDemo = () => {
 
     return (
         <>
-            <LifeCycleChild />
+            <LifeCycle />
             {/* <button onClick={() => {}}>anotherBtn</button> */}
         </>
     );

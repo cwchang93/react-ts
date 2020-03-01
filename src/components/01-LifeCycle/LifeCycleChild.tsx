@@ -1,8 +1,9 @@
 import * as React from 'react';
+import LifeCyclePic from './reactLifeCycle.png'
 
 class LifeCycleChild extends React.Component {
 
-    constructor(props: any) {
+    constructor(props: {}) {
         super(props);
         console.log('constructor');
     }
@@ -44,13 +45,19 @@ class LifeCycleChild extends React.Component {
     render() {
         console.log('render');
         return (
-            <div style={{ border: "solid red 1px" }}>LifeCycleChild
-                <button type="button" onClick={() => this.setState({ init: true })}>setState</button>
-                <button type="button" onClick={() => this.forceUpdate()}>forceUpdate</button>
+            <>
+                <div style={{ border: "solid red 1px", padding: "10px 5px", margin: "5px" }}>LifeCycleChild
+                    <button
+                        style={{ margin: "5px" }}
+                        type="button" onClick={() => this.setState({ init: true })}>setState</button>
+                    <button
+                        style={{ margin: "5px" }}
+                        type="button" onClick={() => this.forceUpdate()}>forceUpdate</button>
 
-            </div>
+                </div>
 
-
+                <img width="100%" height="100%" alt="ReactLifeCycle" src={LifeCyclePic}></img>
+            </>
         )
     }
 
