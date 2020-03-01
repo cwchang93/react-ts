@@ -7,11 +7,8 @@ interface I_InputChild_Props {
     placeholder?: string;
 }
 
-interface I_InputChild_State {
 
-}
-
-class InputChild extends React.Component<I_InputChild_Props, I_InputChild_State> {
+class InputChild extends React.Component<I_InputChild_Props, {}> {
 
 
     render() {

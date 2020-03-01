@@ -96,7 +96,7 @@
 
 ```
 
-### SOL4 使用lodash 深拷貝 _.clonedeep
+### SOL4 使用lodash 深拷貝 _.clonDeep
 ```ts
 const _ = require('lodash');
 

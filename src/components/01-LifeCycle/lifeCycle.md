@@ -1,13 +1,18 @@
 ### 掛載 Mounting
 
-```js
+```jsx
+
+  constructor(props: {}) {
+        super(props);
+        console.log('構造函式 constructor()');
+    }
+
   componentWillMount() {
     console.log('組件將要掛載: componentWillMount');
   }
   componentDidMount() {
     console.log('組件已經掛載: componentDidMount');
   }
-
 
 ```
 
@@ -28,7 +33,25 @@
   }
   
   componentDidUpdate() {
-    console.log('componentDidUpdate');
+    console.log('組件已經更新: componentDidUpdate');
   }
+
+        <button style={{ margin: "5px" }} type="button" 
+      onClick={() => this.setState({ init: true })} >setState</button>
+        <button style={{ margin: "5px" }}
+          type="button" onClick={() => this.forceUpdate()}>forceUpdate</button>
+
+
+
+```
+
+### 卸載 UnMounting
+```js
+
+
+// Unmounting
+    componentWillUnmount() {
+        console.log('組件將要卸載: componentWillUnmount');
+    }
 
 ```

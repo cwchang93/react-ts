@@ -1,14 +1,14 @@
 import * as React from 'react';
-import LifeCyclePic from './reactLifeCycle.png'
+
 
 class LifeCycleChild extends React.Component {
 
+
     constructor(props: {}) {
         super(props);
-        console.log('constructor');
+        console.log('構造函式 constructor()');
     }
 
-    // Mounting
     componentWillMount() {
         console.log('組件將要掛載: componentWillMount');
     }
@@ -16,7 +16,6 @@ class LifeCycleChild extends React.Component {
         console.log('組件已經掛載: componentDidMount');
     }
 
-    // Updating
 
     componentWillReceiveProps() {
         console.log('組件將要接受參數: componentWillReceiveProps');
@@ -36,27 +35,21 @@ class LifeCycleChild extends React.Component {
         console.log('組件已經更新: componentDidUpdate');
     }
 
-
-    // Unmounting
     componentWillUnmount() {
-        console.log('組件將要卸載');
+        console.log('componentWillUnmount', '組件將要卸載');
     }
+
 
     render() {
         console.log('render');
         return (
             <>
-                <div style={{ border: "solid red 1px", padding: "10px 5px", margin: "5px" }}>LifeCycleChild
-                    <button
-                        style={{ margin: "5px" }}
-                        type="button" onClick={() => this.setState({ init: true })}>setState</button>
-                    <button
-                        style={{ margin: "5px" }}
-                        type="button" onClick={() => this.forceUpdate()}>forceUpdate</button>
+                <div style={{ border: "solid red 1px", padding: "10px 5px", margin: "5px" }}>
+                    I'm LifecycleChild
+                    <button onClick={() => this.setState({ init: true })}>setState</button>
+                    <button onClick={() => this.forceUpdate()}>forceUpdate</button>
 
                 </div>
-
-                <img width="100%" height="100%" alt="ReactLifeCycle" src={LifeCyclePic}></img>
             </>
         )
     }

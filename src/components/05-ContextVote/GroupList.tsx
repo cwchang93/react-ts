@@ -7,7 +7,7 @@ interface I_f2eGroup {
 }
 
 interface I_Props {
-  add: () => void;
+  add?: () => void;
 }
 
 class GroupList extends React.Component<I_Props> {
@@ -20,7 +20,7 @@ class GroupList extends React.Component<I_Props> {
     ];
 
     return f2eGroup.map((ele: I_f2eGroup) => {
-      return <Group name={ele.team} key={ele.id} add={() => this.props.add()} />;
+      return <Group name={ele.team} key={ele.id} />;
     });
   }
 }

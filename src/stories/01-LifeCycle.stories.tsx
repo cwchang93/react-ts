@@ -1,5 +1,5 @@
 import * as React from "react";
-import LifeCycle from "../components/01-LifeCycle/LifeCycleChild";
+import LifeCycle from "../components/01-LifeCycle/LifeCycle";
 
 export default {
     title: "01-LifeCycle",
