@@ -7,7 +7,7 @@ class HelloPure extends React.PureComponent<any, any> {
     }
 
     render() {
-        console.log('render');
+        console.log('renderPure');
         return (
             <div style={{ border: 'solid black 1px', padding: '5px' }}>
                 <div>
@@ -19,7 +19,7 @@ class HelloPure extends React.PureComponent<any, any> {
                 <button
                     onClick={() => {
                         this.setState({
-                            age: this.state.age + 1
+                            age: this.state.age
                         })
                     }}>點我加一歲</button>
             </div>

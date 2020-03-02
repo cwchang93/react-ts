@@ -11,11 +11,9 @@ class HelloClass extends React.Component<any, any> {
         return (
             <div style={{ border: 'solid black 1px', padding: '5px' }}>
                 <div>
-                    Hello, there! 我是{this.props.name}
-                    我今年{this.state.age}歲
+                    Hi there!
                 </div>
 
-                <button onClick={() => this.setState({ age: this.state.age + 1 })}>點我增加一歲</button>
 
             </div>
         )

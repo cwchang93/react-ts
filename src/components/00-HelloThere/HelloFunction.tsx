@@ -4,7 +4,6 @@ import * as React from 'react';
 const HelloFunction = (props: any) => {
 
     const [age, setAge] = React.useState<any>(18)
-    console.log('renderFunction');
 
     return (
         <div style={{ border: 'solid black 1px', padding: '5px' }}>
@@ -16,7 +15,7 @@ const HelloFunction = (props: any) => {
             </div>
             <button
                 onClick={() => {
-                    setAge(age + 1)
+                    setAge(age)
                 }}>點我加一歲</button>
         </div>
     )
