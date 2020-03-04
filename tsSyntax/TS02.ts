@@ -51,8 +51,6 @@ tp = ["hello", 10];
 // TS 02-4 要允許多種型別的array要如何表示?
 
 
-
-
 // TS 02-5 函數類型
 function funcType(name: string, age: number): number {
     console.log(`name: ${name} age: ${age}`)
@@ -61,20 +59,16 @@ function funcType(name: string, age: number): number {
 
 funcType('Jinwei', 18);
 
-// TS 02-6 函數參數不確定該怎麼辦? 
-
-function getValue(value: string): string;
-function getValue(value: number): number;
-
+// TS 02-6 函數參數不確定該怎麼辦?  //
 function getValue(value: string | number): string | number {
     return value
 }
 let vFunc: number = getValue(1);
 
 
-// TS 02-7 斷言類型
+// TS 02-7 斷言類型  //
 const getAssert = (value: string | number): number => {
-    return (<string>value).length
+    return value.length
 }
 
 
@@ -82,6 +76,7 @@ const getAssert = (value: string | number): number => {
 interface Iobj1 {
     name: string;
 }
+
 interface Iobj2 {
     age: number
 }

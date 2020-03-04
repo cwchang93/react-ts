@@ -12,6 +12,7 @@ class HelloClass extends React.Component<any, any> {
             <div style={{ border: 'solid black 1px', padding: '5px' }}>
                 <div>
                     Hi there!
+
                 </div>
 
 

@@ -26,8 +26,7 @@ let muchType: string | number = "hello World";
 // 若要調用類型方法則必須符合該類型的方法
 muchType.split("")
 muchType = 100;
-// muchType.split("")   
-
+// muchType.split("")     // 因為number類型沒有split方法
 
 
 console.log(num, flag, un, emp);
