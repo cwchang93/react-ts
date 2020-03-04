@@ -1,6 +1,6 @@
 # React 入門 & 用TS開發React
 
-本教學主要著重在使用TS開發React的基本概念，同時會用storybook實作練習。
+本教學主要著重在使用TS開發React的基本概念，同時會用storybook實作練習。<br />
 PS.本教學有設計寫扣時的常見錯誤，$yarn start 報錯為正常現象。請使用storybook
 
 ## 準備作業
@@ -20,6 +20,8 @@ PS.本教學有設計寫扣時的常見錯誤，$yarn start 報錯為正常現�
 - 根目錄下 $npm i / $yarn
 - $npm -g typescript
 - $npm run storybook / $yarn storybook
+- 若有彈出Storybook的畫面表示成功 <br /> <br />
+<img style="height:300px; width: 400px" src="./public/storybook.png">
 
 ## 學習目標
 1. React的精神是什麼？
