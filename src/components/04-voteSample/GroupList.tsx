@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Group from "./Group";
 
 interface I_f2eGroup {

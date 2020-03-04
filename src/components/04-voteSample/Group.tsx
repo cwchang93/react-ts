@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from "react";
+
 
 interface I_Props {
   name: string;
