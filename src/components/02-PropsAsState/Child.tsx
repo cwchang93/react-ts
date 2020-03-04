@@ -15,6 +15,7 @@ class Child extends React.Component<I_Child_Props, I_Child_State> {
         }
     }
 
+
     handleCilck = () => {
         const newArr = [...this.state.list]
         newArr.push('JW')

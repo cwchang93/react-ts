@@ -13,7 +13,6 @@ export const LifeCycleDemo = () => {
     return (
         <>
             <LifeCycle />
-            {/* <button onClick={() => {}}>anotherBtn</button> */}
         </>
     );
 };

@@ -55,3 +55,34 @@
     }
 
 ```
+
+#### LifeCycleChild
+```js
+
+                    <button onClick={() => this.setState({ init: true })}>setState</button>
+                    <button onClick={() => this.forceUpdate()}>forceUpdate</button>
+
+
+```
+
+
+
+#### LifeCycle
+```js
+
+
+ constructor(props: {}) {
+        super(props);
+        this.state = {
+            initial: false,
+            isRender: true
+        }
+    }
+
+                  {this.state.isRender && <LifeCycleChild />}    // willUnMount
+                <div style={{ border: "solid red 1px" }}>LifeCycle 父層</div>
+                <img width="100%" height="100%" alt="ReactLifeCycle" src={LifeCyclePic}></img>
+                <button onClick={() => this.setState({ initial: true })}>setState</button>
+                <button onClick={() => this.setState({ isRender: !this.state.isRender })}>setIsRender</button>
+
+```
