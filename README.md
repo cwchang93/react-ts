@@ -23,6 +23,8 @@ PS.本教學有設計寫扣時的常見錯誤，\$yarn start 報錯為正常現�
 - \$npm -g typescript
 - $npm run storybook / $yarn storybook
 - 若有彈出 Storybook 的畫面表示成功 <br /> <br />
+
+![image](https://github.com/cwchang93/react-ts/public/storybook.png)
   <img style="height:300px; width: 400px" src="public/storybook.png" />
 
 ## 學習目標
