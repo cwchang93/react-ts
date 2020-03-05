@@ -25,6 +25,7 @@ PS.本教學有設計寫扣時的常見錯誤，\$yarn start 報錯為正常現�
 - 若有彈出 Storybook 的畫面表示成功 <br /> <br />
 
 ![image](https://github.com/cwchang93/react-ts/blob/master/public/storybook.PNG)
+<img src="https://github.com/cwchang93/react-ts/blob/master/public/storybook.PNG" style={"height:200px; width: 300px"}/>
 
 ## 學習目標
 
