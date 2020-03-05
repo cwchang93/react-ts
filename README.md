@@ -24,8 +24,7 @@ PS.本教學有設計寫扣時的常見錯誤，\$yarn start 報錯為正常現�
 - $npm run storybook / $yarn storybook
 - 若有彈出 Storybook 的畫面表示成功 <br /> <br />
 
-![image](https://github.com/cwchang93/react-ts/blob/master/public/storybook.PNG)
-<img src="https://github.com/cwchang93/react-ts/blob/master/public/storybook.PNG" height="200px" width="300px"/>
+<img src="https://github.com/cwchang93/react-ts/blob/master/public/storybook.PNG" height="400px" width="600px"/>
 
 ## 學習目標
 
@@ -45,5 +44,4 @@ PS.本教學有設計寫扣時的常見錯誤，\$yarn start 報錯為正常現�
 
 ## 投影片連結
 
-
-<a href="https://docs.google.com/presentation/d/19qGrlwwv3NVL37G1m_n6f7iKOaHOi-Uq1_p_7D4C1OQ/edit#slide=id.g80f48b3e63_2_31">React 入門＆ 使用 TS 開發 React</a>
+<a href="https://docs.google.com/presentation/d/19qGrlwwv3NVL37G1m_n6f7iKOaHOi-Uq1_p_7D4C1OQ/edit#slide=id.g80f48b3e63_2_31">React 入門＆使用TS開發React</a>
